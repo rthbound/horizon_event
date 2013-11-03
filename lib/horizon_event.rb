@@ -1,5 +1,5 @@
-require "horizon_event/version"
+require_relative "horizon_event/version"
 
 module HorizonEvent
-  # Your code goes here...
+  require_relative "horizon_event/request"
 end
