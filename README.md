@@ -1,4 +1,4 @@
-# HorizonEvent
+# HorizonEvent [![Code Climate](https://codeclimate.com/github/rthbound/horizon_event.png)](https://codeclimate.com/github/rthbound/horizon_event)[![Build Status](https://travis-ci.org/rthbound/horizon_event.png?branch=master)](https://travis-ci.org/rthbound/horizon_event)[![Coverage Status](https://coveralls.io/repos/rthbound/horizon_event/badge.png)](https://coveralls.io/r/rthbound/horizon_event)
 
 Requests a years worth of sunrise/sunset times for cities in the US.
 See [USNO](http://aa.usno.navy.mil/data/docs/RS_OneYear.php)
