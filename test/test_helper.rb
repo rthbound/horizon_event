@@ -1,7 +1,5 @@
-#require 'coveralls'
-require 'simplecov'
-SimpleCov.start
-#Coveralls.wear!
+require 'coveralls'
+Coveralls.wear!
 
 require "minitest/autorun"
 

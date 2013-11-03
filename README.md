@@ -1,6 +1,7 @@
 # HorizonEvent
 
-TODO: Write a gem description
+Requests a years worth of sunrise/sunset times for cities in the US.
+See [USNO](http://aa.usno.navy.mil/data/docs/RS_OneYear.php)
 
 ## Installation
 
@@ -18,7 +19,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+  require "horizon_event"
+  HorizonEvent::Delimited(delimiter: ",", city: "Birmingham", state: "AL").call
+  #=> returns a CSV string representing sunrise/sunset times for a whole year
+
+  HorizonEvent::KeyValuePairing.new(city: "Birmingham", state: "AL").call
+  #=> returns a Hash of all the year's sunrise/sunset times
+
+  HorizonEvent::Request.new(city: "Birmingham", state: "AL").call
+  #=> returns the raw response from USNO (United States Naval Observatory)
+```
 
 ## Contributing
 
