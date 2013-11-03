@@ -1,5 +1,7 @@
-require 'coveralls'
-Coveralls.wear!
+#require 'coveralls'
+require 'simplecov'
+SimpleCov.start
+#Coveralls.wear!
 
 require "minitest/autorun"
 
@@ -7,3 +9,5 @@ require "minitest/autorun"
 $: << File.dirname(__FILE__) + "/../lib"
 $: << File.dirname(__FILE__)
 require "horizon_event/request"
+require "horizon_event/key_value_pairing"
+require "horizon_event/delimited"
